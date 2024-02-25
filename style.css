@@ -1,0 +1,76 @@
+.question {
+    display: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 10px 0px rgba(179, 205, 252, 1);
+    border-radius: 4px;
+    -webkit-animation-fill-mode: none !important;
+    animation-fill-mode: none !important;
+    margin-top: 20px;
+}
+
+.input {
+    text-align: left;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(179, 205, 252, 1);
+    cursor: pointer;
+    margin: 30px 0 30px;
+    padding: 10px 10px;
+}
+
+.parent {
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #fff;
+}
+
+.title {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 44px;
+    width: 100%;
+    margin: 0 -10px;
+    padding: 0;
+    text-align: center;
+    color: #000;
+}
+
+.head {
+    background-color: rgba(227, 235, 250, 1);
+    top: 0;
+    -webkit-box-shadow: 0 1px 6px #ccc;
+    box-shadow: 0 1px 6px #ccc;
+}
+
+body {
+    margin-top: 0;
+}
+
+/* 修改按钮的样式 */
+.btn {
+    /* 设置为块级元素 */
+    display: block;
+    /* 水平居中 */
+    margin: 0 auto;
+    background-color: #007bff;
+    color: #fff;
+    /* 添加一些内边距 */
+    padding: 10px 120px;
+    /* 添加圆角 */
+    border-radius: 30px;
+    /* 设置光标样式为指针，使其在鼠标悬停时显示手型 */
+    cursor: pointer;
+    border: none;
+    /* 添加过渡效果 */
+    transition: background-color 0.3s ease;
+    /* 设置position为relative，以便后面添加伪元素 */
+    position: relative;
+}
+
+/* 悬停时修改按钮的样式 */
+.btn:hover {
+    background-color: #0056b3;
+}
+
