@@ -36,7 +36,7 @@
         {
             set_time_limit(60);
             $url = 'https://chat.openai.com/v1/chat/completions'; //聊天接口
-            $api_key = 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';  //获取到的api key
+            $api_key = 'sk-xxxxxxx';  //获取到的api key
             // Request headers
             $headers = array(
                 'Content-Type: application/json',
@@ -81,8 +81,19 @@
             echo $content;
             // print_r($data);
         }
+        // function getAnswer($res)
+        // {
+        //     echo "test";
+        // }
         ?>
+        <button class='btn' onclick="restart()">再问一次</button>
     </div>
+    <script>
+        function restart()
+        {
+            window.location.href = "./index.php";
+        }
+    </script>
 </body>
 
 </html>
