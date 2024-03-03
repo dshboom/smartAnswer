@@ -11,6 +11,8 @@
 <body>
     <header class="head">
         <h1 class="title">默念心中的问题 我们的解答如下</h1>
+        <button type="button" class="headBtn" id="lyb-btn"><span class="lyb-btn">留言一下</span></button>
+
     </header>
     <div id="answer">
         <?php
@@ -36,7 +38,7 @@
         {
             set_time_limit(60);
             $url = 'https://chat.openai.com/v1/chat/completions'; //聊天接口
-            $api_key = 'sk-xxxxxxx';  //获取到的api key
+            $api_key = 'sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx';  //获取到的api key
             // Request headers
             $headers = array(
                 'Content-Type: application/json',

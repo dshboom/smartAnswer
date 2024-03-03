@@ -5,6 +5,7 @@ const questions = document.querySelectorAll('.question');
 // 显示第一道题目
 questions[currentQuestionIndex].style.display = 'block';
 
+
 function showNextQuestion(currentQuestionId) {
     const currentQuestion = document.getElementById(currentQuestionId);
     const inputs = currentQuestion.querySelectorAll('input[type="radio"]');
@@ -34,7 +35,6 @@ function showNextQuestion(currentQuestionId) {
 function submitForm() {
     if (com == 1) {
         // 在这里处理表单提交逻辑
-        alert('表单已提交！');
         // 返回 true 允许表单继续提交，返回 false 阻止表单的默认提交
         return true;
     } else {
